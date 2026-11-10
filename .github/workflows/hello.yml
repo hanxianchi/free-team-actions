@@ -1,0 +1,13 @@
+name: hello
+on:
+  workflow_dispatch:
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show runner info
+        run: |
+          echo "Hello from GitHub Actions"
+          nproc
+          free -h
+          uname -a
